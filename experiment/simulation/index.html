@@ -22,10 +22,14 @@
 
   <body class="body">
     <!-- <script src="./js/nav.js" id="navbar-1"></script> -->
-    <br>
-    <p>
+    <div style="display: flex; flex-direction: row;">
       <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#instruction-data" aria-expanded="false" aria-controls="instruction-data">Instructions</button>
-      <div class="collapse" id="instruction-data">
+      <div id="timer-top" style="height: 30px; font-size: 25px; margin-bottom: 5px; font-family: monospace; text-align: center;">
+        Timer: 
+        --
+      </div>
+    </div>
+      <div class="collapse" id="instruction-data" style="margin-top: 2%;">
           <div class="card card-body">
               <ul>
                   <li>Click on the <b>PING</b> button to send a PING packet</li>
@@ -35,12 +39,14 @@
               </ul>
           </div>
         </div>
-    </p>
     
     <div class="content" style="display: grid; grid-template-columns: 2fr 3fr 3fr;">
-        <div style="width: 60%; align-content: center; vertical-align: middle;" class="button-div">
+        <div style="width: 60%; align-content: center; " class="button-div">
             <h5>Send Message</h5>
             <button type="button" class="btn-circle" onclick="p1_buttonPress()" >PING</button>
+            <p>
+              <button type="button" id="toggle-canvas" class=" btn-primary" style="border-radius: 25%; margin: 20px;" >Toggle Canvas</button>
+            </p>
         </div>
         <!-- <div id="canvas"></div> -->
 
@@ -53,7 +59,6 @@
   
             <!-- <div></div> -->
           </div>
-          <button id="hover-button">Hover to Show Diagram</button>
 
         </div>
 
@@ -67,7 +72,7 @@
 
           <div id="Log-span" style=" width: 450px; ">
             <h5 style="text-align: center; border-top-right-radius: 20px; border-top-left-radius: 20px; background-color: rgb(160, 212, 255) !important; margin: 0;">Communication log: </h5>
-            <div style="overflow-y: scroll; height:400px; background-color: rgb(160, 212, 255) !important; border-bottom-left-radius: 20px;">
+            <div style="overflow-y: scroll; height:400px; background-color: rgb(160, 212, 255) !important; " id="log-box">
               <ol id="log"></ol>
             </div>
           </div>
@@ -77,34 +82,21 @@
 
   <script src="./js/main.js"></script>
   <script>
-    const button = document.getElementById("hover-button");
     const canvas = document.getElementById("canvas");
     const ray_name = document.getElementById("ray-name");
+    const toggle_canvas = document.getElementById("toggle-canvas");
 
-    if(window.innerWidth > 768){
-      // Show canvas on button hover
-    button.addEventListener("mouseenter", () => {
-      canvas.style.display = "block";
-      ray_name.style.display = "block";
-    });
+    canvas.style.display = "none";
+    ray_name.style.display = "none";
 
-    // Hide canvas when hover leaves the button
-    button.addEventListener("mouseleave", () => {
-      canvas.style.display = "none";
-      ray_name.style.display = "none";
-    });
-
-    // Optionally, hide canvas when hover leaves the canvas itself
-    canvas.addEventListener("mouseleave", () => {
-      canvas.style.display = "none";
-      ray_name.style.display = "none";
-    });
-
-    canvas.addEventListener("mouseenter", () => {
-      canvas.style.display = "block";
-      ray_name.style.display = "block";
+    toggle_canvas.addEventListener("click", () => {
+      if(canvas.style.display === "none"){
+        canvas.style.display = "block";
+        ray_name.style.display = "block";
+      } else {
+        canvas.style.display = "none";
+        ray_name.style.display = "none";
+      }
     })
-    }
-    
   </script>
 </html>

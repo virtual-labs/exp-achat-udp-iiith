@@ -15,7 +15,7 @@
         display: none !important;
     }
 
-    #status-box, #Log-span, #timer, #canvas-box {
+    #status-box, #Log-span, #timer-top, #canvas-box {
         width: 90vw !important;
     }
 
@@ -30,12 +30,22 @@
         align-items: center;
         column-gap: 20px;
     }
-    #timer{
+    #timer-top{
+        display: block !important;
         font-size: 20px !important;
+        padding: 2%;
     }
 
     #status-box{
         height:200px !important;
     }    
+
+    #log-box{
+        height: 200px !important;
+    }
+
+    #timer{
+        display: none !important;
+    }
 
 }

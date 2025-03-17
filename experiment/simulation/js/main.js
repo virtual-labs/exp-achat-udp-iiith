@@ -585,7 +585,10 @@ function start_timer(){
     }
     else {
         secondsElapsed++;
-        var time_field = document.getElementById('timer');
+        if(window.innerWidth > 768)
+          var time_field = document.getElementById('timer');
+        else
+          var time_field = document.getElementById('timer-top');
         time_field.innerHTML = `Timer: ${format_time(secondsElapsed)}`;
     }
     }, 1000);

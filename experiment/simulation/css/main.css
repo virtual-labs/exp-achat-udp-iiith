@@ -116,3 +116,7 @@ body {
   /* padding-right: 14px; */
   
 }
+
+#timer-top{
+  display: none;
+}
