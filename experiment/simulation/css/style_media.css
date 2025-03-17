@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px){
+
+    .body{
+        width: 90vw;
+    }
+    .content {
+        display: flex !important;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90vw;
+    }
+
+    #hover-button{
+        display: none !important;
+    }
+
+    #status-box, #Log-span, #timer, #canvas-box {
+        width: 90vw !important;
+    }
+
+    .canvas-div, #canvas-box {
+        height: 200px !important;
+    }
+
+    .button-div{
+        scale: 0.8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+    }
+    #timer{
+        font-size: 20px !important;
+    }
+
+    #status-box{
+        height:200px !important;
+    }    
+
+}
