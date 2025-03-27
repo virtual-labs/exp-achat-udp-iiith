@@ -2,38 +2,48 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following applications is most likely to use UDP instead of TCP?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sending emails via SMTP",
+        "b": "Downloading large files via FTP",
+        "c": "Live video streaming",
+        "d": "Secure online banking transactions"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the main reason UDP does not guarantee ordered delivery of packets?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It lacks sequence numbers and acknowledgment mechanisms",
+        "b": "It discards packets that arrive late",
+        "c": "It uses connection-oriented communication",
+        "d": "It processes packets based on priority levels"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the following is NOT a typical use case for UDP?",
+      "answers": {
+        "a": "Online gaming",
+        "b": "DNS queries",
+        "c": "Web browsing",
+        "d": "VoIP calls"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a key advantage of UDP over TCP?",
+      "answers": {
+        "a": "Guaranteed packet delivery",
+        "b": "Lower latency due to no retransmissions",
+        "c": "Stronger encryption mechanisms",
+        "d": "Automatic congestion control"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
-  ]
+  ]  
 }

@@ -1,1 +1,1 @@
-### Aim of the experiment
+This module explains the working of **User Datagram Protocol** in Computer Networks. It is a commonly used light-weight, connectionless transport protocol.
