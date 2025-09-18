@@ -39,11 +39,14 @@ if(window.innerWidth > 768){
 else{
   var length = 0.6 * window.innerWidth;
 }
+
+var full_success = [];
+
 const graphWidth = length;
 const graphHeight = 25;
 var ray_counter = 0;
 var end_ = 0;
-
+var ans = 0;
 
 /**
  * @param {number} win probability of getting 1
@@ -265,8 +268,10 @@ async function doublePkt(idx, send_len, ret_len, pkt_no, ack_no) {
       animate2_completion = 1;
       if (ret_len == length){
         logEntry(`${ack_no} @ ${format_time(secondsElapsed)}`,true);
+        full_success.push(pkt_no);
         pong_success++;
         if(pong_success == 3){
+
           setTimeout(() => end_ = 1, 3000);
           setTimeout(() => alert("!!! Completed Sucessfully !!!"),500)
 
@@ -538,6 +543,7 @@ async function callDblPkt(success, returnSuccess, resend_pkt_no = 0) {
 }
 var ping_counter = 0;
 var pong_counter = 0;
+var last_pong = 0;
 var pong_success = 0;
 
 function p1_buttonPress(){
@@ -548,7 +554,8 @@ function p1_buttonPress(){
     // var send_success = 1
     // var return_success = 1
     var send_success = ping_counter > 4 ? getRandom(0.9) : getRandom(0.5);
-    var return_success = pong_counter  > 4 ? getRandom(0.9) : getRandom(0.4);
+    var return_success = pong_counter  > 4 ? getRandom(0.1) : getRandom(0.9);
+
     if (send_success){
       if (return_success){
         doublePkt(ray_counter,length,length,`PING_${++ping_counter}`,`PONG_${++pong_counter}`);
@@ -568,6 +575,22 @@ function p1_buttonPress(){
     }
 
 
+}
+
+function ping_validate(){
+    // if(end_) return;
+    let input1 = document.getElementById("ping_count");
+    if((input1.value.trim()==full_success[2].split('_')[1] && pong_counter>=3)){
+        input1.style.borderColor = "green";
+        input1.style.backgroundColor = "lightgreen";
+
+        setTimeout(function () {
+            alert("Excercise completed");;
+          }, 300);
+    } else{
+        input1.style.borderColor = "red";
+        input1.style.backgroundColor = "lightcoral";
+    }
 }
 
 function format_time(seconds) {

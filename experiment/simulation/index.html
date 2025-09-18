@@ -34,8 +34,8 @@
               <ul>
                   <li>Click on the <b>PING</b> button to send a PING packet</li>
                   <li>On succesfully receiving a <b>PING</b> packet, the Receiver will send a <b>PONG</b> packet</li>
-                  <li>The RTT is <b>4 seconds</b> of the timer</li>
-                  <li><b><u>Task</u>:</b> Receive <b>3 PONG</b> packets from Receiver</li>
+                  <li><b><u>Task 1</u>:</b> Receive <b>3 PONG</b> packets from Receiver</li>
+                  <li><b><u>Task 2</u>:</b> Fill in the <b>number of PING packets required</b> to send for this</li>
               </ul>
           </div>
         </div>
@@ -44,9 +44,17 @@
         <div style="width: 60%; align-content: center; " class="button-div">
             <h5>Send Message</h5>
             <button type="button" class="btn-circle" onclick="p1_buttonPress()" >PING</button>
-            <p>
+            <!-- <p>
               <button type="button" id="toggle-canvas" class=" btn-primary" style="border-radius: 25%; margin: 20px;" >Toggle Canvas</button>
-            </p>
+            </p> -->
+            <p> </p>
+            <div>
+              <h6>Number of PING required</h6>
+              <input type="text" autocomplete="off" id="ping_count" style="width: 100px;" placeholder="">
+                <button class="btn" onclick="ping_validate()">
+                    Submit
+                </button>
+            </div>
         </div>
         <!-- <div id="canvas"></div> -->
 
@@ -81,7 +89,7 @@
   </body>
 
   <script src="./js/main.js"></script>
-  <script>
+  <!-- <script>
     const canvas = document.getElementById("canvas");
     const ray_name = document.getElementById("ray-name");
     const toggle_canvas = document.getElementById("toggle-canvas");
@@ -98,5 +106,5 @@
         ray_name.style.display = "none";
       }
     })
-  </script>
+  </script> -->
 </html>
