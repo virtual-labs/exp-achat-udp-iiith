@@ -1,0 +1,49 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following best describes UDP?",
+      "answers": {
+        "a": "A connection-oriented protocol",
+        "b": "A reliable transport protocol",
+        "c": "A connectionless, lightweight protocol",
+        "d": "A protocol with built-in error correction"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is UDP suitable for real-time applications like VoIP and video streaming?",
+      "answers": {
+        "a": "It guarantees error-free delivery of data",
+        "b": "It minimizes latency by avoiding retransmissions",
+        "c": "It prioritizes security over speed",
+        "d": "It provides built-in congestion control"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which characteristic of UDP allows it to send messages without establishing a connection?",
+      "answers": {
+        "a": "Stateless operation",
+        "b": "Three-way handshake",
+        "c": "Flow control mechanism",
+        "d": "Error recovery system"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which technique can be used to improve reliability when using UDP?",
+      "answers": {
+        "a": "Using a retransmission mechanism at the application layer",
+        "b": "Enabling flow control in UDP",
+        "c": "Implementing a handshake process",
+        "d": "Increasing UDP’s default packet size"
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}

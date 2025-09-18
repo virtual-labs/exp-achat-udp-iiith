@@ -1,0 +1,63 @@
+
+/home/runner/work/exp-achat-udp-iiith/exp-achat-udp-iiith/experiment/simulation/js/main.js
+   40:7    warning  'length' is already defined                     no-redeclare
+   49:5    warning  'ans' is assigned a value but never used        no-unused-vars
+  179:16   warning  'callAnimateRay' is defined but never used      no-unused-vars
+  432:16   warning  'callDblPkt' is defined but never used          no-unused-vars
+  463:13   warning  'last_ack_received' is not defined              no-undef
+  470:5    warning  'last_ack_sent' is not defined                  no-undef
+  471:5    warning  'last_pkt_sent' is not defined                  no-undef
+  473:42   warning  'last_ack_received' is not defined              no-undef
+  483:5    warning  'max_pkt_sent' is not defined                   no-undef
+  483:20   warning  'max_pkt_sent' is not defined                   no-undef
+  483:35   warning  'last_pkt_sent' is not defined                  no-undef
+  483:51   warning  'max_pkt_sent' is not defined                   no-undef
+  483:66   warning  'last_pkt_sent' is not defined                  no-undef
+  490:32   warning  'last_pkt_sent' is not defined                  no-undef
+  494:11   warning  'last_pkt_sent' is not defined                  no-undef
+  494:32   warning  'last_ack_sent' is not defined                  no-undef
+  494:50   warning  'last_ack_sent' is not defined                  no-undef
+  494:66   warning  'last_ack_sent' is not defined                  no-undef
+  497:7    warning  'max_pkt_sent' is not defined                   no-undef
+  498:9    warning  'max_pkt_sent' is not defined                   no-undef
+  498:24   warning  'last_pkt_sent' is not defined                  no-undef
+  498:40   warning  'max_pkt_sent' is not defined                   no-undef
+  498:55   warning  'last_pkt_sent' is not defined                  no-undef
+  501:74   warning  'p7_docTitle' is not defined                    no-undef
+  501:97   warning  'last_ack_received' is not defined              no-undef
+  501:117  warning  'last_ack_sent' is not defined                  no-undef
+  502:13   warning  'last_ack_sent' is not defined                  no-undef
+  507:16   warning  'last_pkt_sent' is not defined                  no-undef
+  508:16   warning  'last_ack_sent' is not defined                  no-undef
+  514:32   warning  'last_pkt_sent' is not defined                  no-undef
+  518:11   warning  'last_pkt_sent' is not defined                  no-undef
+  518:32   warning  'last_ack_sent' is not defined                  no-undef
+  518:50   warning  'last_ack_sent' is not defined                  no-undef
+  518:66   warning  'last_ack_sent' is not defined                  no-undef
+  522:7    warning  'max_pkt_sent' is not defined                   no-undef
+  523:9    warning  'max_pkt_sent' is not defined                   no-undef
+  523:24   warning  'last_pkt_sent' is not defined                  no-undef
+  523:40   warning  'max_pkt_sent' is not defined                   no-undef
+  523:55   warning  'last_pkt_sent' is not defined                  no-undef
+  529:16   warning  'last_pkt_sent' is not defined                  no-undef
+  530:16   warning  'last_ack_sent' is not defined                  no-undef
+  536:30   warning  'last_pkt_sent' is not defined                  no-undef
+  537:5    warning  'max_pkt_sent' is not defined                   no-undef
+  537:20   warning  'max_pkt_sent' is not defined                   no-undef
+  537:35   warning  'last_pkt_sent' is not defined                  no-undef
+  537:51   warning  'max_pkt_sent' is not defined                   no-undef
+  537:66   warning  'last_pkt_sent' is not defined                  no-undef
+  539:56   warning  'last_pkt_sent' is not defined                  no-undef
+  541:72   warning  'p7_docTitle' is not defined                    no-undef
+  541:96   warning  'last_ack_received' is not defined              no-undef
+  546:5    warning  'last_pong' is assigned a value but never used  no-unused-vars
+  549:10   warning  'p1_buttonPress' is defined but never used      no-unused-vars
+  580:10   warning  'ping_validate' is defined but never used       no-unused-vars
+  588:42   warning  Unnecessary semicolon                           no-extra-semi
+  605:3    warning  'timer' is not defined                          no-undef
+  607:23   warning  'timer' is not defined                          no-undef
+  614:15   warning  'time_field' is already defined                 no-redeclare
+
+✖ 57 problems (0 errors, 57 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
